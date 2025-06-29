@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: Home
+---
+
+{% include "components/hero.njk" %}
+{% include "components/introduction.njk" %}
+{% include "components/services.njk" %}
+{% include "components/workWithUs.njk" %}
+
+{% set backgroundImage = aboutUsBrief.backgroundImage %}
+{% include "components/aboutUsBrief.njk" %}

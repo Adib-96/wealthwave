@@ -1,0 +1,37 @@
+<section class="bg-[#202020] p-7 md:p-10" aria-labelledby="why-work-with-us">
+  <header class="max-w-4xl mx-auto text-center md:mb-16 px-4">
+    <h2
+      id="why-work-with-us"
+      class="text-5xl font-semibold tracking-tight text-white sm:text-7xl"
+    >
+      Our Advantage
+    </h2>
+    <p class="m-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+      We don’t just consult — we partner. Our mission is to help you move
+      forward with clarity, strategy, and measurable results.
+    </p>
+  </header>
+
+  <div class="max-w-7xl mx-auto md:p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for card in workWithUs %}
+      <a
+        href="#"
+        class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 max-w-md mx-auto"
+      >
+        <img
+          class="object-cover rounded-t-lg w-full h-64 sm:h-72 md:h-80"
+          src="{{ card.img }}"
+          alt="{{ card.title }}"
+        />
+        <div class="p-6 flex flex-col justify-between">
+          <h5 class="mb-3 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {{ card.title }}
+          </h5>
+          <p class="text-gray-700 dark:text-gray-400 text-lg">
+            {{ card.text }}
+          </p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

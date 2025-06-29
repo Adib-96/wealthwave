@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 text-white">
+  <div class="flex justify-around items-center h-20 px-4 md:px-10">
+    <a href="/">
+      <img src="/images/logo.webp" alt="logo-img" class="max-w-52 h-auto" />
+    </a>
+
+    <!-- Hamburger Icon (mobile only) -->
+    <div class="md:hidden">
+      <button class="text-white focus:outline-none" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-10 font-medium">
+      
+
+      
+        <a
+          href="/"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Home
+        </a>
+      
+        <a
+          href="/services"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Services
+        </a>
+      
+        <a
+          href="/about"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          About us
+        </a>
+      
+        <a
+          href="/contact"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Contact
+        </a>
+      
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-nav" class="hidden md:hidden flex flex-col items-center gap-4 p-4 pb-4 font-medium animate-fadeIn">
+    
+      <a
+        href="/"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Home
+      </a>
+    
+      <a
+        href="/services"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Services
+      </a>
+    
+      <a
+        href="/about"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        About us
+      </a>
+    
+      <a
+        href="/contact"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Contact
+      </a>
+    
+  </div>
+</div>
+
+  <main>
+    
+<div class="bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 p-5 md:p-20">
+  <h1 class="text-white font-bold text-3xl md:text-5xl md:max-w-5xl text-center m-auto p-1 md:p-6">
+    Ride the wave of strategic wealth creation.
+  </h1>
+
+  <p class="text-white max-w-xl font-normal text-lg md:text-2xl p-4 text-center mx-auto h-28">
+    Helping investors access real opportunities in Libya and Tunisia through market research, financial planning, and local expertise.
+  </p>
+
+  <div class="flex gap-6 justify-center items-center p-5">
+    <a href="/contact" class="bg-white p-4 rounded-md">
+      Let's Talk
+    </a>
+    <a href="/services" class="bg-[#2C2C2C] text-white p-4 rounded-md">
+      How We Help
+    </a>
+  </div>
+</div>
+
+<div class="bg-[#202020]">
+  <p class="text-lg md:text-2xl italic p-5 md:p-10 font-medium text-white max-w-5/6 text-center m-auto">
+    “We are a Tunisia-based consulting team helping companies streamline
+    operations, optimize processes, and scale sustainably.”
+  </p>
+</div>
+
+<section class="bg-[#202020] p-7 md:p-10">
+  <div class="max-w-4xl mx-auto text-center md:mb-16 px-4">
+    <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+      What We Do
+    </h2>
+    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+      Here’s how we help businesses like yours succeed.
+    </p>
+  </div>
+
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+    
+      
+      <article
+  onclick="window.location.href='/services#Market%20Research%20%26%20Feasibility%20Studies'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="bg-white/10 m-5 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition cursor-pointer flex flex-col justify-center md:flex-row min-h-[250px]"
+>
+  <!-- Left Section -->
+  <div class="gap-4 text-white flex flex-col justify-center items-center w-full md:w-1/2 p-6 text-center">
+    <h3 class="text-2xl font-normal md:text-2xl tracking-wide">Market Research &amp; Feasibility Studies</h3>
+    <p class="text-white/80 text-base"></p>
+    <button
+      aria-label="Learn more about Market Research &amp; Feasibility Studies"
+      class="flex items-center gap-2 bg-white text-black px-4 py-2 mt-4 rounded-full hover:bg-gray-200 transition"
+      type="button"
+      onclick="event.stopPropagation(); window.location.href='/services#Market%20Research%20%26%20Feasibility%20Studies'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <span class="font-normal">Read More</span>
+    </button>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden md:block w-px bg-white/30"></div>
+
+  <!-- Right Section - Image -->
+  <div class="hidden md:flex w-1/2 flex-shrink-0 items-center justify-center p-4">
+    <img
+      src="/images/bus_decision.svg"
+      alt="Market Research &amp; Feasibility Studies illustration"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+</article>
+
+    
+      
+      <article
+  onclick="window.location.href='/services#Financial%20Modeling%20%26%20Business%20Planning'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="bg-white/10 m-5 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition cursor-pointer flex flex-col justify-center md:flex-row min-h-[250px]"
+>
+  <!-- Left Section -->
+  <div class="gap-4 text-white flex flex-col justify-center items-center w-full md:w-1/2 p-6 text-center">
+    <h3 class="text-2xl font-normal md:text-2xl tracking-wide">Financial Modeling &amp; Business Planning</h3>
+    <p class="text-white/80 text-base"></p>
+    <button
+      aria-label="Learn more about Financial Modeling &amp; Business Planning"
+      class="flex items-center gap-2 bg-white text-black px-4 py-2 mt-4 rounded-full hover:bg-gray-200 transition"
+      type="button"
+      onclick="event.stopPropagation(); window.location.href='/services#Financial%20Modeling%20%26%20Business%20Planning'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <span class="font-normal">Read More</span>
+    </button>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden md:block w-px bg-white/30"></div>
+
+  <!-- Right Section - Image -->
+  <div class="hidden md:flex w-1/2 flex-shrink-0 items-center justify-center p-4">
+    <img
+      src="/images/operations.svg"
+      alt="Financial Modeling &amp; Business Planning illustration"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+</article>
+
+    
+      
+      <article
+  onclick="window.location.href='/services#Valuation%20Services'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="bg-white/10 m-5 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition cursor-pointer flex flex-col justify-center md:flex-row min-h-[250px]"
+>
+  <!-- Left Section -->
+  <div class="gap-4 text-white flex flex-col justify-center items-center w-full md:w-1/2 p-6 text-center">
+    <h3 class="text-2xl font-normal md:text-2xl tracking-wide">Valuation Services</h3>
+    <p class="text-white/80 text-base"></p>
+    <button
+      aria-label="Learn more about Valuation Services"
+      class="flex items-center gap-2 bg-white text-black px-4 py-2 mt-4 rounded-full hover:bg-gray-200 transition"
+      type="button"
+      onclick="event.stopPropagation(); window.location.href='/services#Valuation%20Services'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <span class="font-normal">Read More</span>
+    </button>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden md:block w-px bg-white/30"></div>
+
+  <!-- Right Section - Image -->
+  <div class="hidden md:flex w-1/2 flex-shrink-0 items-center justify-center p-4">
+    <img
+      src="/images/startup_advisory.svg"
+      alt="Valuation Services illustration"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+</article>
+
+    
+      
+      <article
+  onclick="window.location.href='/services#Investment%20Advisory%20%26%20Local%20Support'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="bg-white/10 m-5 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition cursor-pointer flex flex-col justify-center md:flex-row min-h-[250px]"
+>
+  <!-- Left Section -->
+  <div class="gap-4 text-white flex flex-col justify-center items-center w-full md:w-1/2 p-6 text-center">
+    <h3 class="text-2xl font-normal md:text-2xl tracking-wide">Investment Advisory &amp; Local Support</h3>
+    <p class="text-white/80 text-base"></p>
+    <button
+      aria-label="Learn more about Investment Advisory &amp; Local Support"
+      class="flex items-center gap-2 bg-white text-black px-4 py-2 mt-4 rounded-full hover:bg-gray-200 transition"
+      type="button"
+      onclick="event.stopPropagation(); window.location.href='/services#Investment%20Advisory%20%26%20Local%20Support'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <span class="font-normal">Read More</span>
+    </button>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden md:block w-px bg-white/30"></div>
+
+  <!-- Right Section - Image -->
+  <div class="hidden md:flex w-1/2 flex-shrink-0 items-center justify-center p-4">
+    <img
+      src="/images/strategy.svg"
+      alt="Investment Advisory &amp; Local Support illustration"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+</article>
+
+    
+  </div>
+</section>
+
+<section class="bg-[#202020] p-7 md:p-10" aria-labelledby="why-work-with-us">
+  <header class="max-w-4xl mx-auto text-center md:mb-16 px-4">
+    <h2
+      id="why-work-with-us"
+      class="text-5xl font-semibold tracking-tight text-white sm:text-7xl"
+    >
+      Our Advantage
+    </h2>
+    <p class="m-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+      We don’t just consult — we partner. Our mission is to help you move
+      forward with clarity, strategy, and measurable results.
+    </p>
+  </header>
+
+  <div class="max-w-7xl mx-auto md:p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+      <a
+        href="#"
+        class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 max-w-md mx-auto"
+      >
+        <img
+          class="object-cover rounded-t-lg w-full h-64 sm:h-72 md:h-80"
+          src="/images/wenowthemarket.svg"
+          alt="We Know the Market"
+        />
+        <div class="p-6 flex flex-col justify-between">
+          <h5 class="mb-3 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            We Know the Market
+          </h5>
+          <p class="text-gray-700 dark:text-gray-400 text-lg">
+            We understand how business works in Libya and Tunisia — from market trends and pricing to local regulations and business culture.
+          </p>
+        </div>
+      </a>
+    
+      <a
+        href="#"
+        class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 max-w-md mx-auto"
+      >
+        <img
+          class="object-cover rounded-t-lg w-full h-64 sm:h-72 md:h-80"
+          src="/images/connection.svg"
+          alt="We Have the Right Connections"
+        />
+        <div class="p-6 flex flex-col justify-between">
+          <h5 class="mb-3 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            We Have the Right Connections
+          </h5>
+          <p class="text-gray-700 dark:text-gray-400 text-lg">
+            We work directly with trusted developers, owners, and decision-makers — giving you access to real opportunities and smoother execution.
+          </p>
+        </div>
+      </a>
+    
+      <a
+        href="#"
+        class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 max-w-md mx-auto"
+      >
+        <img
+          class="object-cover rounded-t-lg w-full h-64 sm:h-72 md:h-80"
+          src="/images/business.svg"
+          alt="We Are Independent and Reliable"
+        />
+        <div class="p-6 flex flex-col justify-between">
+          <h5 class="mb-3 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+            We Are Independent and Reliable
+          </h5>
+          <p class="text-gray-700 dark:text-gray-400 text-lg">
+            We work only for our clients. Our advice is clear, honest, and confidential — focused on long-term results.
+          </p>
+        </div>
+      </a>
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+  <img
+    alt=""
+    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-y=.8&amp;w=2830&amp;h=1500&amp;q=80&amp;blend=111827&amp;sat=-100&amp;exp=15&amp;blend-mode=multiply"
+    class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center"
+  />
+
+  <div
+    aria-hidden="true"
+    class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+  >
+    <div
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+      class="aspect-[1097/845] w-[274.25rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+    ></div>
+  </div>
+
+  <div
+    aria-hidden="true"
+    class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+  >
+    <div
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+      class="aspect-[1097/845] w-[274.25rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+    ></div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Meet the Team</h2>
+      <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+        Wealthwave Consulting is an independent advisory firm that helps investors and businesses succeed in Libya and Tunisia. We specialise in market research, financial modeling, valuation, and investment support.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+        
+          <a href="#">
+            Our Expertise <span aria-hidden="true">&rarr;</span>
+          </a>
+        
+          <a href="#">
+            Case Studies <span aria-hidden="true">&rarr;</span>
+          </a>
+        
+          <a href="#">
+            Client Testimonials <span aria-hidden="true">&rarr;</span>
+          </a>
+        
+          <a href="#">
+            Meet Our Team <span aria-hidden="true">&rarr;</span>
+          </a>
+        
+      </div>
+
+      <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Clients Served</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">120+</dd>
+          </div>
+        
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Advisory Experts</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">50+</dd>
+          </div>
+        
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Industries Covered</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">10+</dd>
+          </div>
+        
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base text-gray-300">Client Satisfaction</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">98%</dd>
+          </div>
+        
+      </dl>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+   <footer class="px-6 pt-8 md:px-16 lg:px-36 w-full text-gray-300 bg-black">
+  <div class="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
+    <div class="md:max-w-96">
+      <a href="/" onclick="window.scrollTo(0,0)">
+        <img class="max-w-52 h-auto" src="/images/logo.webp" alt="logo" />
+      </a>
+      <p class="mt-6 text-sm">
+        Wealthwave Consulting is a specialised advisory firm focused on
+        helping international investors access opportunities in Libya and
+        Tunisia.
+      </p>
+    </div>
+    <div class="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
+      <div>
+        <h2 class="font-semibold mb-5">Company</h2>
+        <ul class="text-sm space-y-2">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/contact/">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-5">Get in touch</h2>
+        <div class="text-sm space-y-2">
+          <p>+216-28-525-977</p>
+          <p>contact@example.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="pt-4 text-center text-sm pb-5">
+    
+  </p>
+</footer>
+</body>
+</html>

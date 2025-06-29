@@ -1,0 +1,30 @@
+<article
+  onclick="window.location.href='/services#{{ current.serv_name | url_encode }}'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="bg-white/10 m-5 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition cursor-pointer flex flex-col justify-center md:flex-row min-h-[250px]"
+>
+  <!-- Left Section -->
+  <div class="gap-4 text-white flex flex-col justify-center items-center w-full md:w-1/2 p-6 text-center">
+    <h3 class="text-2xl font-normal md:text-2xl tracking-wide">{{ current.serv_name }}</h3>
+    <p class="text-white/80 text-base">{{ current.serv_des }}</p>
+    <button
+      aria-label="Learn more about {{ current.serv_name }}"
+      class="flex items-center gap-2 bg-white text-black px-4 py-2 mt-4 rounded-full hover:bg-gray-200 transition"
+      type="button"
+      onclick="event.stopPropagation(); window.location.href='/services#{{ current.serv_name | url_encode }}'; window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <span class="font-normal">Read More</span>
+    </button>
+  </div>
+
+  <!-- Divider -->
+  <div class="hidden md:block w-px bg-white/30"></div>
+
+  <!-- Right Section - Image -->
+  <div class="hidden md:flex w-1/2 flex-shrink-0 items-center justify-center p-4">
+    <img
+      src="{{ current.url_image or '/fallback-service-image.png' }}"
+      alt="{{ current.serv_name }} illustration"
+      class="w-full h-auto object-contain"
+    />
+  </div>
+</article>

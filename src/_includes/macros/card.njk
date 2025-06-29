@@ -1,0 +1,25 @@
+{# Card macro for services - matches exact HTML structure #}
+{% macro card(title, description, icon, variant) %}
+{% if variant == 'highlight' %}
+<div class="relative">
+  <div class="absolute -inset-1">
+    <div class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r"></div>
+  </div>
+  <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+    <div class="p-9">
+      {% if icon %}{{ icon | safe }}{% endif %}
+      {% if title %}<h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">{{ title }}</h3>{% endif %}
+      {% if description %}<p class="mt-6 text-base text-gray-600">{{ description }}</p>{% endif %}
+    </div>
+  </div>
+</div>
+{% else %}
+<div class="overflow-hidden bg-white shadow-md rounded-xl">
+  <div class="p-9">
+    {% if icon %}{{ icon | safe }}{% endif %}
+    {% if title %}<h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">{{ title }}</h3>{% endif %}
+    {% if description %}<p class="mt-6 text-base text-gray-600">{{ description }}</p>{% endif %}
+  </div>
+</div>
+{% endif %}
+{% endmacro %}

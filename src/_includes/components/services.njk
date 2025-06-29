@@ -1,0 +1,17 @@
+<section class="bg-[#202020] p-7 md:p-10">
+  <div class="max-w-4xl mx-auto text-center md:mb-16 px-4">
+    <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+      What We Do
+    </h2>
+    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+      Here’s how we help businesses like yours succeed.
+    </p>
+  </div>
+
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+    {% for service in services %}
+      {% set current = service %}
+      {% include "components/serviceCard.njk" %}
+    {% endfor %}
+  </div>
+</section>
