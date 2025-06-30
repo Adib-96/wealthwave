@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to Wealthwave Consulting, your partner for investment success in Libya and Tunisia." />
   <title>Home</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="/styles/main.css">
+
+<!-- favicon setup -->
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="wealthwave" />
+<link rel="manifest" href="/images/site.webmanifest" />
+
+   <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Home" />
+  <meta property="og:description" content="Welcome to Wealthwave Consulting, your partner for investment success in Libya and Tunisia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wealthwave.com/" />
+  <meta property="og:image" content="/images/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Home" />
+  <meta name="twitter:description" content="Welcome to Wealthwave Consulting, your partner for investment success in Libya and Tunisia." />
+  <meta name="twitter:image" content="/images/og.png" />
 </head>
 <body>
   <div class="bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 text-white">
@@ -187,23 +211,33 @@
 
   <main>
     
-<div class="bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 p-5 md:p-20">
-  <h1 class="text-white font-bold text-3xl md:text-5xl md:max-w-5xl text-center m-auto p-1 md:p-6">
-    Ride the wave of strategic wealth creation.
-  </h1>
-
-  <p class="text-white max-w-xl font-normal text-lg md:text-2xl p-4 text-center mx-auto h-28">
-    Helping investors access real opportunities in Libya and Tunisia through market research, financial planning, and local expertise.
-  </p>
-
-  <div class="flex gap-6 justify-center items-center p-5">
-    <a href="/contact" class="bg-white p-4 rounded-md">
-      Let's Talk
-    </a>
-    <a href="/services" class="bg-[#2C2C2C] text-white p-4 rounded-md">
-      How We Help
-    </a>
+<div class="relative bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 md:p-20 overflow-hidden">
+  <div class="relative z-10 text-center p-10 md:p-20 text-center">
+    <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+      Ride the wave of strategic wealth creation.
+    </h1>
+    <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
+      Helping investors access real opportunities in Libya and Tunisia through market research, financial planning, and local expertise.
+    </p>
+    <div class="flex gap-6 justify-center p-5">
+      <a href="/contact" class="bg-white text-black p-4 rounded-md hover:scale-105 transition">Let's Talk</a>
+      <a href="/services" class="bg-[#2C2C2C] text-white p-4 rounded-md hover:scale-105 transition">How We Help</a>
+    </div>
   </div>
+
+  <!-- Responsive image -->
+  <img
+    src="/images/cube.png"
+    alt="cube-image"
+    class="
+      absolute hidden md:block opacity-90
+      bottom-[-120px] right-[-60px] w-64
+      md:bottom-[-200px] md:right-[-80px] md:w-lg
+      lg:bottom-[-240px] lg:right-[-100px] lg:w-xl
+      xl:bottom-[-240px] xl:right-[-120px] xl:w-[40rem]
+      2xl:bottom-[-360px] 2xl:right-[-140px] 2xl:w-[55rem]
+    "
+  />
 </div>
 
 <div class="bg-[#202020]">
@@ -553,13 +587,13 @@
         <h2 class="font-semibold mb-5">Get in touch</h2>
         <div class="text-sm space-y-2">
           <p>+216-28-525-977</p>
-          <p>contact@example.com</p>
+          <p>ab.zlitni@gmail.com</p>
         </div>
       </div>
     </div>
   </div>
   <p class="pt-4 text-center text-sm pb-5">
-    
+     Copyright © 2025 WEALTHWAVE. All Rights Reserved.
   </p>
 </footer>
 </body>
