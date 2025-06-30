@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}" />
   <title>{{ title }}</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="/styles/main.css">
+
+<!-- favicon setup -->
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="wealthwave" />
+<link rel="manifest" href="/images/site.webmanifest" />
+
+   <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="{{ title | default(site.defaultTitle) }}" />
+  <meta property="og:description" content="{{ description | default(site.defaultDescription) }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{{ ogImage | default(site.defaultOgImage) }}" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title | default(site.defaultTitle) }}" />
+  <meta name="twitter:description" content="{{ description | default(site.defaultDescription) }}" />
+  <meta name="twitter:image" content="{{ ogImage | default(site.defaultOgImage) }}" />
 </head>
 <body>
   {% include "components/header.njk" %}

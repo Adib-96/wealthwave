@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>about</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="bg-gradient-to-r from-[#570A63]/90 to-[#1d5a79]/100 text-white">
+  <div class="flex justify-around items-center h-20 px-4 md:px-10">
+    <a href="/">
+      <img src="/images/logo.webp" alt="logo-img" class="max-w-52 h-auto" />
+    </a>
+
+    <!-- Hamburger Icon (mobile only) -->
+    <div class="md:hidden">
+      <button class="text-white focus:outline-none" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-10 font-medium">
+      
+
+      
+        <a
+          href="/"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Home
+        </a>
+      
+        <a
+          href="/services"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Services
+        </a>
+      
+        <a
+          href="/about"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          About us
+        </a>
+      
+        <a
+          href="/contact"
+          class="relative inline-block px-1 pb-1
+            after:content-['']
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:bg-white
+            after:transition-transform
+            after:duration-300
+            after:scale-x-0
+            after:origin-left
+            hover:after:scale-x-100">
+          Contact
+        </a>
+      
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-nav" class="hidden md:hidden flex flex-col items-center gap-4 p-4 pb-4 font-medium animate-fadeIn">
+    
+      <a
+        href="/"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Home
+      </a>
+    
+      <a
+        href="/services"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Services
+      </a>
+    
+      <a
+        href="/about"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        About us
+      </a>
+    
+      <a
+        href="/contact"
+        class="relative inline-block px-1 pb-1
+          after:content-['']
+          after:absolute
+          after:left-0
+          after:bottom-0
+          after:h-[2px]
+          after:w-full
+          after:bg-white
+          after:transition-transform
+          after:duration-300
+          after:scale-x-0
+          after:origin-left
+          hover:after:scale-x-100"
+        onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+        Contact
+      </a>
+    
+  </div>
+</div>
+
+  <main>
+    
+<section class="py-24 relative xl:mr-0 lg:mr-5 mr-0">
+  <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+    <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
+      <!-- Left Text Content -->
+      <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+        <div class="w-full flex-col justify-center items-start gap-8 flex">
+          <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
+            <h6 class="text-gray-400 text-base font-normal leading-relaxed">About Us</h6>
+            <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+              <h2 class="text-indigo-700 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                Wealthwave Consulting
+              </h2>
+              <p class="text-left text-gray-500 text-base font-normal leading-relaxed lg:text-start ">
+                Wealthwave Consulting is an independent advisory firm that helps investors and businesses succeed in Libya and Tunisia. We specialise in market research, financial modeling, valuation, and investment support.
+              </p>
+              <p class="text-left text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center mt-2">
+                Our clients are international investors, project developers, and local businesses who seek clarity, structure, and reliable insight in complex markets. Backed by strong local knowledge and real connections on the ground, we turn ideas into well-planned, investment-ready opportunities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mission -->
+          <div class="w-full flex-col justify-center items-start gap-6 flex mt-6">
+            <h3 class="text-indigo-700 text-2xl font-bold font-manrope">Our Mission</h3>
+            <p class="text-left text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+              Our mission is to bridge the gap between capital and opportunity in Libya and Tunisia. We support investors with the insight, financial logic, and local understanding they need to make informed decisions, structure viable projects, and create long-term value.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-full lg:justify-start justify-center items-start flex">
+        <div class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
+          <img
+            class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
+            src="https://pagedone.io/asset/uploads/1717742431.png"
+            alt="Team of consultants working together at Wealthwave Consulting"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+   <footer class="px-6 pt-8 md:px-16 lg:px-36 w-full text-gray-300 bg-black">
+  <div class="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
+    <div class="md:max-w-96">
+      <a href="/" onclick="window.scrollTo(0,0)">
+        <img class="max-w-52 h-auto" src="/images/logo.webp" alt="logo" />
+      </a>
+      <p class="mt-6 text-sm">
+        Wealthwave Consulting is a specialised advisory firm focused on
+        helping international investors access opportunities in Libya and
+        Tunisia.
+      </p>
+    </div>
+    <div class="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
+      <div>
+        <h2 class="font-semibold mb-5">Company</h2>
+        <ul class="text-sm space-y-2">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/contact/">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold mb-5">Get in touch</h2>
+        <div class="text-sm space-y-2">
+          <p>+216-28-525-977</p>
+          <p>ab.zlitni@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="pt-4 text-center text-sm pb-5">
+     Copyright © 2025 WEALTHWAVE. All Rights Reserved.
+  </p>
+</footer>
+</body>
+</html>

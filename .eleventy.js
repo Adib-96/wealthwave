@@ -1,7 +1,7 @@
 module.exports = async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/images");
-
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   // Add the url_encode filter
   eleventyConfig.addNunjucksFilter("url_encode", function(value) {
     return encodeURIComponent(value);
